@@ -1,7 +1,10 @@
 # utilities-bits_to_hex
 Bits to hexadecimal converter (command line tool)
 
-./bits2hex
+- Reads bits from command line input (10101011...)
+- Display hexadecimal format
+
+```./bits2hex
 
 Usage: ./bits 1101010 111 01100110 11010101
 
@@ -11,4 +14,4 @@ Usage: ./bits 1101010 111 01100110 11010101
 0000000000000001          0 (0x1)
 0000000000000010          1 (0x2)
 0000000000000011    1.58496 (0x3)
-0000000000000100          2 (0x4)
+0000000000000100          2 (0x4)```
