@@ -49,9 +49,9 @@ int main(int argc, char** argv) {
 	}
 	else {
 		cout << endl;
-		cout << "Usage: ./bits 1101010 111 01100110 11010101" << endl;
+		cout << "Usage: ./bits2hex 1101010 111 01100110 11010101" << endl;
 		cout << endl;
-		cout << "./bits 0 1 10 11 100" << endl;
+		cout << "./bits2hex 0 1 10 11 100" << endl;
 		bits_to_hex("0");
 		bits_to_hex("1");
 		bits_to_hex("10");

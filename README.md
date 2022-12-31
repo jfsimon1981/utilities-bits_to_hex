@@ -5,11 +5,9 @@ Bits to hexadecimal converter (command line tool)
 - Display hexadecimal format
 
 ```
-./bits2hex
-
 Usage: ./bits2hex 1101010 111 01100110 11010101
 
-./bits 0 1 10 11 100
+./bits2hex 0 1 10 11 100
       Bits              Bit Hex
 0000000000000000          0 (0x0)
 0000000000000001          1 (0x1)
