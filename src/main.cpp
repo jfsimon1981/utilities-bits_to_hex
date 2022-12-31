@@ -34,7 +34,7 @@ void bits_to_hex(string sin) {
 			exp++;
 		}
 	}
-	cout << setw(16) << bitset<16>(value) << setw(11) << log2(value) << setw(4) << "(0x" << std::hex << value << ")" << endl;
+	cout << setw(16) << bitset<16>(value) << setw(11) << log2(value+1) << setw(4) << "(0x" << std::hex << value << ")" << endl;
 }
 
 int main(int argc, char** argv) {
