@@ -4,6 +4,11 @@
 #include <iostream>
 #include "jfs.h"
 
+#ifdef __OpenBSD__
+#include <unistd.h>
+#include <err.h>
+#endif
+
 using namespace std;
 
 void bits_to_hex(string sin) {
@@ -38,6 +43,10 @@ void bits_to_hex(string sin) {
 }
 
 int main(int argc, char** argv) {
+#ifdef __OpenBSD__
+	if (pledge("stdio", NULL) == -1)
+		err(1, "pledge");
+#endif
 	vector<string> args {args_read(argc, argv)};
 	if (args.size() > 1) {
 		for (auto i:args) {
